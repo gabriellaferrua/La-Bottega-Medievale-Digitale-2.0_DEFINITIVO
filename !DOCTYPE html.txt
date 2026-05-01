@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 3 - Il Progetto</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; font-family: 'Verdana', sans-serif; background: #333; }
+        .bg-image { 
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+            background: url('sfondo2.jpg') no-repeat center center fixed; 
+            background-size: cover; z-index: -1; 
+        }
+        .main-container { position: relative; z-index: 10; display: flex; flex-direction: column; height: 100vh; }
+        
+        header { 
+            background: rgba(0, 0, 0, 0.85); color: #FFD700; padding: 20px; 
+            text-align: center; font-size: 2.5rem; font-weight: bold; border-bottom: 6px solid #FFD700; 
+        }
+        
+        .content { flex: 1; display: flex; align-items: center; justify-content: center; padding: 20px; overflow-y: auto; }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 25px;
+            border: 8px solid #000;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+        }
+
+        .testo-titolo { 
+            font-size: 3rem; 
+            color: #d35400; 
+            font-weight: bold; 
+            margin-bottom: 20px; 
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .testo-desc {
+            font-size: 1.6rem;
+            line-height: 1.6;
+            color: #000;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-bar { 
+            background: rgba(255, 255, 255, 0.9); padding: 20px; 
+            display: flex; justify-content: space-between; align-items: center; 
+            border-top: 6px solid #000; 
+        }
+        .btn-nav { 
+            padding: 15px 35px; font-size: 1.5rem; font-weight: bold; 
+            border-radius: 12px; text-decoration: none; color: black; 
+            background: white; border: 5px solid black; text-transform: uppercase; 
+        }
+
+        .progress-container { width: 40%; background: #bbb; height: 30px; border-radius: 15px; overflow: hidden; border: 3px solid #000; }
+        .progress-bar { width: 37.5%; background: #28a745; height: 100%; }
+    </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    
+    <div class="main-container">
+        <header>FASE 3: IL PROGETTO</header>
+        
+        <div class="content">
+            <div class="glass-panel">
+                <a href="https://www.youtube.com/watch?v=jU3ttS37Dik" target="_blank" style="text-decoration: none;">
+                    <p class="testo-titolo">LE VETRATE GOTICHE</p>
+                </a>
+                <p class="testo-desc">
+                    DOPO AVER OSSERVATO LE VETRATE DELLA CATTEDRALE, ABBIAMO PROGETTATO LA NOSTRA OPERA. 
+                    ABBIAMO SCELTO LE FORME GEOMETRICHE E I COLORI PER RACCONTARE UNA STORIA ATTRAVERSO LA LUCE.
+                </p>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <a href="fase2.html" class="btn-nav">⬅️ INDIETRO</a>
+            <a href="index.html" style="font-size: 3rem; text-decoration: none;">🏠</a>
+            <div class="progress-container"><div class="progress-bar"></div></div>
+            <a href="fase4.html" class="btn-nav">AVANTI ➡️</a>
+        </div>
+    </div>
+</body>
+</html>

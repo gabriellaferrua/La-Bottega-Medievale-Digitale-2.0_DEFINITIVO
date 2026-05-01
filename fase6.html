@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 6 - L'Assemblea</title>
+    <style>
+
+        :root { --font-main: Verdana, Arial, sans-serif; --gold:#FFD700; --dark:#222; --orange:#d35400; --green:#28a745; --panel-bg:rgba(255,255,255,.94); --header-h:92px; --nav-h:96px; --content-pad:24px; --radius:24px; --border:6px solid #222; }
+        * { box-sizing:border-box; }
+        html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; font-family:var(--font-main); background:#222; }
+        .bg-image { position:fixed; inset:0; width:100%; height:100%; background:url('sfondo2.jpg') no-repeat center center fixed; background-size:cover; z-index:1; }
+        .main-container { position:relative; z-index:10; display:grid; grid-template-rows:var(--header-h) 1fr var(--nav-h); height:100vh; width:100vw; }
+        header { height:var(--header-h); display:flex; align-items:center; justify-content:center; padding:0 24px; background:rgba(34,34,34,.92); color:var(--gold); border-bottom:6px solid var(--gold); text-align:center; font-size:clamp(1.7rem,3.1vw,2.45rem); line-height:1.05; font-weight:800; text-transform:uppercase; }
+        .content { min-height:0; display:flex; align-items:center; justify-content:center; padding:var(--content-pad); text-align:center; overflow:auto; }
+        .glass-panel, #box-testo { width:min(92vw,960px); min-height:270px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; background:var(--panel-bg); padding:clamp(28px,5vw,56px); border-radius:var(--radius); border:var(--border); box-shadow:0 14px 36px rgba(0,0,0,.55); color:#222; }
+        .testo-fase, .testo-cliccabile, .testo-titolo { margin:0; color:var(--orange); font-size:clamp(2rem,4.3vw,3.2rem); line-height:1.22; font-weight:800; text-transform:uppercase; }
+        .hint { display:block; margin-top:12px; color:var(--orange); font-size:clamp(1.1rem,2vw,1.45rem); font-weight:800; text-transform:uppercase; }
+        .nav-bar { height:var(--nav-h); display:grid; grid-template-columns:minmax(150px,1fr) 80px minmax(220px,40vw) minmax(150px,1fr); align-items:center; gap:16px; padding:16px 24px; background:rgba(238,238,238,.94); border-top:6px solid #222; }
+        .btn-nav, .btn-start, .audio-btn, .audio-guide-btn, .doc-item, .pannello-box, .btn-link, button { font-family:var(--font-main); font-weight:800; text-transform:uppercase; }
+        .btn-nav { min-height:58px; display:inline-flex; align-items:center; justify-content:center; padding:12px 28px; border-radius:12px; border:4px solid #111; background:#fff; color:#111; text-decoration:none; font-size:clamp(1.05rem,1.8vw,1.35rem); line-height:1; cursor:pointer; }
+        .nav-home { display:inline-flex; align-items:center; justify-content:center; font-size:2.4rem !important; line-height:1; text-decoration:none; }
+        .progress-container, .progress-box { width:100%; height:28px; background:#bbb; border-radius:999px; overflow:hidden; border:3px solid #222; }
+        .progress-bar, .progress-fill { height:100%; background:var(--green); }
+        a { color:inherit; } video { width:100%; display:block; background:#000; }
+        @media (max-width:760px){ :root{--header-h:82px;--nav-h:112px;--content-pad:16px;} .nav-bar{grid-template-columns:1fr 60px 1fr; grid-template-rows:auto auto; gap:10px;} .progress-container,.progress-box{grid-column:1/-1; grid-row:2;} .btn-nav{padding:10px 14px; min-height:50px;} }
+
+.testo-cliccabile{text-decoration:underline; cursor:pointer;} .progress-bar{width:75%;}
+    </style>
+</head>
+<body>
+    <div class="bg-image"></div>
+    
+    <div class="main-container">
+        <header>FASE 6: L'ASSEMBLEA</header>
+        
+        <div class="content">
+            <div class="glass-panel">
+                <a href="assemblea.html" target="_blank" style="text-decoration: none;">
+                    <div class="testo-cliccabile">
+                        È IL MOMENTO DI DECIDERE INSIEME.<br>
+                        PARLATE CON I COMPAGNI.
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <a href="fase5.html" class="btn-nav">⬅️ INDIETRO</a>
+            <a href="index.html" class="nav-home">🏠</a>
+            <div class="progress-container"><div class="progress-bar"></div></div>
+            <a href="fase7.html" class="btn-nav">AVANTI ➡️</a>
+        </div>
+    </div>
+</body>
+</html>

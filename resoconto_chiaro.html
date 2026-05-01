@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Resoconto Capobottega Leggibile</title>
+    <style>
+        /* Usiamo Verdana: il miglior font per la leggibilità e la CAA */
+        body {
+            margin: 0; padding: 0;
+            background-image: url('sfondo.jpg');
+            background-size: cover;
+            font-family: 'Verdana', Geneva, sans-serif;
+            display: flex; justify-content: center;
+        }
+
+        .foglio {
+            width: 210mm;
+            min-height: 297mm;
+            background: rgba(255, 255, 255, 0.95); /* Sfondo più chiaro per massimo contrasto */
+            margin: 20px;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            border: 10px solid #5d2e0a;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .rosone {
+            position: absolute; top: 20px; right: 20px;
+            width: 90px; height: 90px;
+            background-image: url('rosone.jpg');
+            background-size: cover;
+            border: 2px solid #5d2e0a;
+        }
+
+        /* TITOLI IN STAMPATELLO CHIARO */
+        h1 { 
+            text-align: center;
+            font-size: 2.2rem; 
+            color: #ffffff;
+            background-color: #5d2e0a;
+            padding: 15px;
+            margin: 0 0 30px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase; /* FORZA LO STAMPATELLO */
+        }
+
+        h2 { 
+            font-size: 1.4rem;
+            background: #8b4513; 
+            color: white;
+            padding: 8px 15px; 
+            margin-top: 30px;
+            text-transform: uppercase; /* FORZA LO STAMPATELLO */
+            letter-spacing: 1px;
+        }
+
+        .info-riga { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 25px; 
+            font-size: 1.1rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .sezione { clear: both; margin-bottom: 25px; }
+
+        .domanda { 
+            margin: 15px 0 8px 0; 
+            font-weight: bold; 
+            color: #000; 
+            font-size: 1.1rem;
+        }
+        
+        .opzione { 
+            margin-left: 10px; 
+            font-size: 1rem; 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .quadratino { 
+            width: 20px; 
+            height: 20px; 
+            border: 2px solid #5d2e0a; 
+            margin-right: 12px; 
+            display: inline-block; 
+            background: white;
+        }
+
+        .mastro-img {
+            float: left; 
+            width: 85px; 
+            height: 85px;
+            margin-right: 20px; 
+            border: 3px solid #8b4513;
+            object-fit: cover;
+        }
+
+        .firma-box {
+            margin-top: 50px;
+            text-align: right;
+        }
+
+        .linea-firma {
+            border-top: 2px solid #000;
+            display: inline-block;
+            width: 300px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="foglio">
+    <div class="rosone"></div>
+    
+    <h1>Resoconto Finale del Capobottega</h1>
+
+    <div class="info-riga">
+        <span>BOTTEGA N°: ________</span>
+        <span>CAPOBOTTEGA: ____________________</span>
+        <span>DATA: __________</span>
+    </div>
+
+    <div class="sezione">
+        <img src="1mastrogeometra - architetto.jpg" class="mastro-img">
+        <h2>Fase Analogica: La Costruzione della Vetrata</h2>
+        
+        <p class="domanda">1. Come ha gestito il gruppo l'uso degli strumenti (compasso, squadrette, veline)?</p>
+        <div class="opzione"><span class="quadratino"></span> Con grande precisione e cura dei materiali.</div>
+        <div class="opzione"><span class="quadratino"></span> Con qualche incertezza tecnica, ma aiutandosi a vicenda.</div>
+        <div class="opzione"><span class="quadratino"></span> Con difficoltà, è stato necessario l'intervento della Prof.</div>
+
+        <p class="domanda">2. Durante la creazione pratica, la comunicazione nel gruppo è stata:</p>
+        <div class="opzione"><span class="quadratino"></span> Collaborativa: ogni suggerimento (anche sui colori) è stato ascoltato.</div>
+        <div class="opzione"><span class="quadratino"></span> Funzionale: abbiamo parlato solo dello stretto necessario.</div>
+        <div class="opzione"><span class="quadratino"></span> Difficile: ci sono stati momenti di silenzio o contrasti.</div>
+    </div>
+
+    <div class="sezione">
+        <img src="3scriba - giornalista.jpg" class="mastro-img">
+        <h2>Fase Digitale: Pixton e l'Identità</h2>
+        
+        <p class="domanda">3. Nella creazione degli Avatar su Pixton, il gruppo ha scelto gli accessori:</p>
+        <div class="opzione"><span class="quadratino"></span> In modo coerente con i ruoli svolti (es. squadra, penna).</div>
+        <div class="opzione"><span class="quadratino"></span> In modo creativo, ma non del tutto collegato ai compiti.</div>
+        <div class="opzione"><span class="quadratino"></span> In modo casuale, privilegiando l'estetica personale.</div>
+
+        <p class="domanda">4. L'attività digitale ha aiutato a ridurre l'ansia o i conflitti?</p>
+        <div class="opzione"><span class="quadratino"></span> Moltissimo: lavorare sugli avatar ci ha resi più uniti.</div>
+        <div class="opzione"><span class="quadratino"></span> Abbastanza: è stato un momento divertente.</div>
+        <div class="opzione"><span class="quadratino"></span> Poco: abbiamo preferito la fase manuale.</div>
+    </div>
+
+    <div class="sezione">
+        <img src="4capo bottega - menager.jpg" class="mastro-img">
+        <h2>Fase Finale: Caricamento e Condivisione</h2>
+        
+        <p class="domanda">5. Il caricamento dei materiali su Digipad è stato:</p>
+        <div class="opzione"><span class="quadratino"></span> Completo: inserite 2 foto, avatar, titolo e audio.</div>
+        <div class="opzione"><span class="quadratino"></span> Parziale: mancano uno o due elementi.</div>
+        <div class="opzione"><span class="quadratino"></span> Essenziale: caricata solo la foto finale.</div>
+
+        <p class="domanda">6. Qual è il livello di soddisfazione per il "Sigillo Sonoro"?</p>
+        <div class="opzione"><span class="quadratino"></span> Alto: l'audio rappresenta perfettamente il nostro valore.</div>
+        <div class="opzione"><span class="quadratino"></span> Medio: lo scriba ha letto il messaggio, ma potevamo fare più prove.</div>
+        <div class="opzione"><span class="quadratino"></span> Basso: difficoltà tecniche con la registrazione.</div>
+    </div>
+
+    <div class="sezione">
+        <h2>Valutazione Globale del Processo</h2>
+        
+        <p class="domanda">7. Quale "clima" ha respirato la bottega durante l'intero progetto?</p>
+        <div class="opzione"><span class="quadratino"></span> Clima di Maestria: Tutti si sono sentiti responsabili e valorizzati.</div>
+        <div class="opzione"><span class="quadratino"></span> Clima di Apprendistato: Dobbiamo migliorare l'organizzazione.</div>
+        <div class="opzione"><span class="quadratino"></span> Clima di Cantiere Aperto: Molto vivace ma con qualche confusione.</div>
+
+        <p class="domanda">8. Il valore scelto dal gruppo è stato espresso meglio:</p>
+        <div class="opzione"><span class="quadratino"></span> Attraverso la luce della vetrata fisica.</div>
+        <div class="opzione"><span class="quadratino"></span> Attraverso le parole e l'audio dello Scriba.</div>
+        <div class="opzione"><span class="quadratino"></span> Attraverso l'immagine del gruppo di Avatar.</div>
+    </div>
+
+    <div class="firma-box">
+        <strong>FIRMA DEL CAPOBOTTEGA</strong><br>
+        <div class="linea-firma"></div>
+    </div>
+</div>
+
+</body>
+</html>
